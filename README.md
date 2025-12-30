@@ -1,5 +1,14 @@
 # FastApi_Example
 FastAPI와 Docker, Action 시스템의 구현을 위한 예시 Repository
+
+# 시작하기
+pip install -r requirements.txt
+
+# 서버실행
+uvicorn main:app --reload
+   OR   
+python3 -m uvicorn main:app --reload
+
 # 도커 로그인
 docker login
 
