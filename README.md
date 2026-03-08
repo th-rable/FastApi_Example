@@ -50,7 +50,7 @@ docker run --privileged --rm tonistiigi/binfmt --install all
 docker logs -f --tail 10 mycontainer
 
 # etc
-vim fastapi.conf  
+vim /etc/nginx/sites-available/fastapi.conf    
 sudo ln -s /etc/nginx/sites-available/fastapi.conf /etc/nginx/sites-enabled/fastapi.conf  
 rm /etc/nginx/sites-enabled/fastapi.conf  
 sudo nginx -t  
