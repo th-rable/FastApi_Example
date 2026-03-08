@@ -48,3 +48,12 @@ docker run --privileged --rm tonistiigi/binfmt --install all
 
 # 도커 실시간 로그 확인하기
 docker logs -f --tail 10 mycontainer
+
+# etc
+vim fastapi.conf  
+sudo ln -s /etc/nginx/sites-available/fastapi.conf /etc/nginx/sites-enabled/fastapi.conf  
+rm /etc/nginx/sites-enabled/fastapi.conf  
+sudo nginx -t  
+
+cat /var/log/nginx/error.log  
+docker logs -f --tail 10 memo-online  
