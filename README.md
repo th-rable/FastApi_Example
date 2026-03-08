@@ -54,6 +54,6 @@ vim /etc/nginx/sites-available/fastapi.conf
 sudo ln -s /etc/nginx/sites-available/fastapi.conf /etc/nginx/sites-enabled/fastapi.conf  
 rm /etc/nginx/sites-enabled/fastapi.conf  
 sudo nginx -t  
-
+sudo nginx -s reload  
 cat /var/log/nginx/error.log  
 docker logs -f --tail 10 memo-online  
